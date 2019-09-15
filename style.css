@@ -15,6 +15,7 @@ p {
 
 h1 {
     font-size: 8rem;
+    text-transform: uppercase;
 }
 
 h2 {}
@@ -46,10 +47,8 @@ h3 {
     bottom: 1rem;
     left: 0;
     right: 0;
-    color: white;
-    font-size: 3rem;
-    text-align: center;
-    opacity: 0.85;
+    display: flex;
+    justify-content: center;
 }
 
 .projects-list {
@@ -88,5 +87,9 @@ h3 {
 
     h1 {
         font-size: 3rem;
+    }
+
+    .splash-screen .down-arrow img {
+        width: 2rem;
     }
 }
