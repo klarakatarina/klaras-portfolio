@@ -2,7 +2,7 @@ body {
     margin: 0 0 1rem 0;
 }
 
-article:not(.splash-screen) {
+article:not(.splash-screen, .project) {
     padding: 1rem;
 }
 
@@ -10,7 +10,7 @@ h1,
 h2,
 h3,
 p {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     font-weight: lighter;
 }
 
@@ -19,8 +19,6 @@ h1 {
     text-transform: uppercase;
     color: rgb(33, 64, 32);
 }
-
-h2 {}
 
 h3 {
     font-size: 1.6rem;
@@ -90,24 +88,11 @@ h3 {
     text-align: center;
 }
 
-@media screen and (max-width: 600px) {
-    .projects-list {
-        grid-template-columns: 1fr;
-    }
-
-    h1 {
-        font-size: 3rem;
-    }
-
-    .splash-screen .down-arrow img {
-        width: 2rem;
-    }
-}
-
 .project {
     border: 3px solid rgba(33, 64, 32, 0.15);
     border-radius: 25px;
     margin: 30px 60px;
+    padding: 30px 50px;
 }
 
 .project-back-arrow {
@@ -130,11 +115,13 @@ h3 {
 .project-image {
     border: 1px dashed rgba(0, 0, 0, 0.37);
     border-radius: 25px;
+    width: 100%;
 }
 
 .project-image img {
     border: 0px solid black;
     border-radius: 25px;
+    width: 100%;
 }
 
 .project-text {
@@ -146,4 +133,31 @@ h3 {
 
 .project-text p {
     text-align: right;
+}
+
+@media screen and (max-width: 600px) {
+    .projects-list {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .splash-screen .down-arrow img {
+        width: 2rem;
+    }
+
+    .project-back {
+        display: none;
+    }
+
+    .project {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .project-content {
+        flex-direction: column;
+    }
 }
