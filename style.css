@@ -15,7 +15,7 @@ p {
 }
 
 h1 {
-    font-size: 8rem;
+    font-size: 6rem;
     text-transform: uppercase;
     color: rgb(33, 64, 32);
 }
@@ -135,19 +135,7 @@ h3 {
     text-align: right;
 }
 
-@media screen and (max-width: 600px) {
-    .projects-list {
-        grid-template-columns: 1fr;
-    }
-
-    h1 {
-        font-size: 3rem;
-    }
-
-    .splash-screen .down-arrow img {
-        width: 2rem;
-    }
-
+@media screen and (max-width: 799px) {
     .project-back {
         display: none;
     }
@@ -159,5 +147,20 @@ h3 {
 
     .project-content {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .projects-list {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .splash-screen .down-arrow img {
+        width: 2rem;
+        height: 100%;
     }
 }
