@@ -149,6 +149,10 @@ h3 {
     .project-content {
         flex-direction: column;
     }
+
+    .project-text {
+        margin-left: unset;
+    }
 }
 
 @media screen and (max-width: 600px) {
