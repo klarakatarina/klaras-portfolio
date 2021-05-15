@@ -88,13 +88,6 @@ h3 {
   text-align: center;
 }
 
-.project {
-  border: 3px solid rgba(33, 64, 32, 0.15);
-  border-radius: 25px;
-  margin: 30px 60px;
-  padding: 30px 50px;
-}
-
 .project-back-arrow {
   position: absolute;
   left: 0;
@@ -175,6 +168,11 @@ h3 {
   justify-content: space-between;
   align-items: center;
 }
+
+.background {
+  background-color: #aabcab;
+}
+
 .letschat-text {
   font-size: 26px;
   color: rgb(2, 88, 31);
@@ -196,4 +194,29 @@ h3 {
   50% {
     border-color: transparent;
   }
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-sq {
+  background-color: white;
+  box-shadow: 0 2px 2px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 10%);
+  margin: 70px 30px;
+  padding: 30px 50px;
+}
+
+.contact-header {
+  text-align: center;
+  text-transform: none;
+  margin: 0;
+}
+
+.contact-text {
+  font-size: 55px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: lighter;
 }
