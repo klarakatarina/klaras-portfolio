@@ -159,6 +159,7 @@ h3 {
   font-size: 55px;
   font-family: "Courier New", Courier, monospace;
   font-weight: lighter;
+  color: black;
 }
 
 @media screen and (max-width: 600px) {
@@ -176,6 +177,10 @@ h3 {
   }
   .contact-text {
     font-size: 2rem;
+  }
+
+  .contact-info {
+    flex-direction: column;
   }
 }
 
