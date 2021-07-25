@@ -172,6 +172,10 @@ h2 {
   .project-text {
     margin-left: unset;
   }
+
+.heading-flexbox {
+    flex-direction: column;
+  }
 }
 
 .contact-text {
