@@ -173,7 +173,7 @@ h2 {
     margin-left: unset;
   }
 
-.heading-flexbox {
+  .heading-flexbox {
     flex-direction: column;
   }
 }
